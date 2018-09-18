@@ -10,7 +10,7 @@ var Lang = {
         chinese: "æµ‹è¯•ä»£å¸å‘æ”¾"
     },
     entersendToAddress: {
-        english: "Please enter your QTUM testnet address to receive test tokens",
+        english: "Please enter your HTMLCOIN testnet address to receive test tokens",
         chinese: "è¯·è¾“å…¥ä½ çš„HTMLCOINåœ°å€æ¥æŽ¥æ”¶æµ‹è¯•ä»£å¸"
     },
     invalidsendToAddressPattern: {
