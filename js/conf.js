@@ -1,1 +1,1 @@
-var htmlcoinUrl = 'https://testnet-api.htmlcoin.com/app/';
+var htmlcoinUrl = 'https://wallet.htmlcoin.com/htmlcoin-testnet-faucet/';
