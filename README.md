@@ -6,17 +6,16 @@ https://wallet.htmlcoin.com/faucet
 
 First generate a new payment address:
 
-```
-qcli getnewaddress
+```wallet.htmlcoin.com
+```- Click Settings and Select Testnet
+```- Generate testnet wallet
 
-hcf3Yv72SbLvVDmU99BMf5T1YwvdvA3fx6
-```
 
 Then copy it into the input box:
 
 ![](https://raw.githubusercontent.com/qtumproject/qtumbook/38b045436f87e28ad80fc041549c0ee4a77dda38/en/part1/networks/faucet.jpg)
 
-https://wallet.htmlcoin.com/faucet
+https://wallet.htmlcoin.com/htmlcoin-testnet-faucet
 
 Once accepted, you should see your address and amount in the list of latest payouts:
 
@@ -26,7 +25,7 @@ Clicking on the pay out address, you'd see a link to view the transaction in the
 
 ![](https://raw.githubusercontent.com/qtumproject/qtumbook/38b045436f87e28ad80fc041549c0ee4a77dda38/en/part1/networks/faucet-pay-tx.jpg)
 
-[https://testnet-explorer.htmlcoin.com/address/hcf3Yv72SbLvVDmU99BMf5T1YwvdvA3fx6](https://testnet-explorer.htmlcoin.com/address/hcf3Yv72SbLvVDmU99BMf5T1YwvdvA3fx6)
+[https://testnet-api.htmlcoin.com/address/hcf3Yv72SbLvVDmU99BMf5T1YwvdvA3fx6](https://testnet-api.htmlcoin.com/address/hcf3Yv72SbLvVDmU99BMf5T1YwvdvA3fx6)
 
 Once it's confirmed, you can check your balance locally:
 
