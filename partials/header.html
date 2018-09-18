@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default no-margin-bottom" ng-controller="HeaderCtrl">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#!/"><img class="top-logo" src="img/htmlcoin-icon.png"></a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse"
+			id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav nav-active">
+				<li class="blueFont" ng-class="selectedBg=='home'?'active':''" id="header"><a href="#!/">{{Lang.Faucet[activeLang.name]}}</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">				
+				<li class="dropdown"><a href="" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false"><span class="glyphicon glyphicon-globe"></span>&nbsp;{{activeLang.caption}}<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+                        <li ng-repeat="(langId, langSel) in headerLangs">
+                            <a href="" ng-click="switchLang(langId)">{{ langSel.caption }}</a>
+                        </li>
+					</ul>
+                </li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
