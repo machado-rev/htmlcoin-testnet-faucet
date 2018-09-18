@@ -1,0 +1,53 @@
+<div class="row litePad">
+    <div class="col col-md-12">
+		<div class="text-center searchBox">
+    	<img class="textCenter" src="img/htmlcoin-big.png">
+    	</div>    
+    </div>
+</div>
+<div class="row litePad">
+    <div class="col col-md-12">
+    	<div class="container centerDiv searchBox">
+        <form role="sendToAddress" id="sendToAddressForm" name="sendToAddressForm">
+                <div class="input-group">
+                    <input type="text" id="sendToAddressText" name="sendToAddressText" class="form-control" placeholder="{{Lang.entersendToAddress[activeLang.name]}}" ng-model="currentsendToAddress" ng-minlength="34" size="34" required>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info" id="btn-sendToAddress" type="button" ng-disabled="sendToAddressForm.sendToAddressText.$invalid" ng-click="sendToAddress(currentsendToAddress)"><span class="glyphicon glyphicon-ok"></span></button>
+                    </span>
+                </div>
+                <div class="input-group">
+                    <img id="loader-sendToAddress" src="img/loader.gif" style="opacity:0;">
+                </div>
+            </form>
+        </div>    
+    </div>
+</div>
+<div class="row">
+    <div class="col col-md-12">
+    <div class="container centerDiv">
+        <div class="panel panel-muted">
+            <div class="panel-heading"><span class="panelTitle blueFont">{{Lang.latestPayouts[activeLang.name]}}</span>&nbsp;<img id="loader-payouts" src="img/loader.gif" style="opacity:0;"></div>
+            <div class="panel-body">
+                <table class="table table-striped">
+                    <thead class="bg-muted">
+                        <tr>
+                            <th class="blueFont">{{Lang.address[activeLang.name]}}</th>
+                            <th class="textCenter blueFont">{{Lang.amount[activeLang.name]}}</th>
+                            <th class="textCenter blueFont">{{Lang.status[activeLang.name]}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="(Id, Element) in payoutsList">
+                            <td class="blueFont"><a ng-href="https://testnet-api.htmlcoin.com/address/{{Element['address']}}" target="_blank">{{Element['address']}}</a></td>
+                            <td class="textCenter blueFont">{{Element['amount']}}</td>
+                            <td class="textCenter blueFont">
+                            <span class="mediumFont" data-toggle="tooltip" title="{{Element['status']==1?Lang.sent[activeLang.name]:Lang.pending[activeLang.name]}}" ng-class="Element['status']==1?'glyphicon glyphicon-ok':'glyphicon glyphicon-hourglass'"></span>
+							</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
